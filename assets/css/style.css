@@ -1,0 +1,77 @@
+body{
+  background-color: #f1eae5
+}
+
+.header-container {
+  display: flex;
+  /*position: fixed;*/
+  justify-content: space-between;
+  /*box-shadow: 1px 1px 5px;*/
+  background-color: #5DC8EB;
+  height: 4rem;
+  width: 100%;
+
+  align-items: center;
+}
+
+.header-items {
+  align-self: center;
+  padding: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-container {
+/*  display: grid;*/
+  display: flex;
+  position: fixed;
+/*  grid-template-columns: 60% 40% */
+/*  justify-content: space-evenly;*/
+/*  box-shadow: 1px -1px 5px;*/
+  background-color: #5DC8EB;
+  height: 4rem;
+  bottom: 0;
+  width: 100%;
+  border-width: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+  margin-left: 2rem;
+  padding: 0.5rem;
+}
+
+.footer-item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  padding: 0.5rem;
+}
+
+.font_main{
+  font-family: 'PT Serif', serif;
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.font_sub{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-top: 1.2rem; 
+}
+
+.header{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+}
+
+.text{
+  color: #000000;
+  text-decoration: none;
+}

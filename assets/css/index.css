@@ -1,0 +1,31 @@
+.menu-container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 5rem 5rem;
+	max-width: 64rem;
+	margin: 0 auto;
+	margin-bottom: 6.7rem;
+	justify-content: center;
+	grid-gap: 2px;
+}
+
+.menu-item {
+	display: flex;
+	align-self: stretch;
+	text-align: center;
+	background-color: #B0EAFF;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.menu-text{
+
+}
+
+.border {
+  background-color: black;
+}
+
+.grid > div {
+  background-color: white;
+}
