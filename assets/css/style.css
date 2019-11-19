@@ -1,5 +1,5 @@
 body{
-  background-color: #f1eae5
+  background-color: #FFFFFF
 }
 
 .header-container {
@@ -7,7 +7,7 @@ body{
   /*position: fixed;*/
   justify-content: space-between;
   /*box-shadow: 1px 1px 5px;*/
-  background-color: #5DC8EB;
+  background-color: #FEC800;
   height: 4rem;
   width: 100%;
 
@@ -23,34 +23,37 @@ body{
 
 .footer-container {
 /*  display: grid;*/
-  display: flex;
+  display: grid;
   position: fixed;
-/*  grid-template-columns: 60% 40% */
+  grid-template-columns: 50% 50%;
 /*  justify-content: space-evenly;*/
 /*  box-shadow: 1px -1px 5px;*/
-  background-color: #5DC8EB;
   height: 4rem;
   bottom: 0;
   width: 100%;
   border-width: 10px;
   align-items: center;
+  grid-gap: 2px;
   justify-content: space-around;
+  background-color: black;
 }
 
-.footer-item1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  align-self: center;
-  margin-left: 2rem;
-  padding: 0.5rem;
+.footer-item {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FEC800;
 }
 
-.footer-item2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  align-self: center;
-  padding: 0.5rem;
+.footer-txt{
+
 }
+
+.border {
+  background-color: black;
+}
+
 
 .font_main{
   font-family: 'PT Serif', serif;

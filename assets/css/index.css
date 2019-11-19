@@ -13,8 +13,8 @@
 	display: flex;
 	align-self: stretch;
 	text-align: center;
-	background-color: #B0EAFF;
-	align-items: center;
+	background-color: #FFF3BD;
+	align-items: center;t
 	justify-content: space-around;
 }
 
@@ -22,10 +22,6 @@
 
 }
 
-.border {
+/*.border {
   background-color: black;
-}
-
-.grid > div {
-  background-color: white;
-}
+}*/

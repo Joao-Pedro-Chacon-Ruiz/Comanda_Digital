@@ -1,0 +1,29 @@
+body{
+	background-color: #FFF3BD
+}
+
+.container{
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	flex-direction: column;
+	left: 2rem;
+	right: 2rem;
+	top: 2rem;
+	bottom: 2rem;
+}
+
+.restaurante{
+	display: flex;
+	align-self: center;
+}
+
+.mesa{
+	display: flex;
+	align-self: center;
+}
+
+.avancar{
+	display: flex;
+	justify-content: flex-end;
+}
