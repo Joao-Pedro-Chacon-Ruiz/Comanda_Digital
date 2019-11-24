@@ -5,8 +5,9 @@
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/inicio.css" rel="stylesheet">
-<!--   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--
   <script src="assets/js/codes.js"></script>
   <script src="assets/js/index.js"></script> -->
   <meta charset="utf-8"/>
@@ -15,13 +16,15 @@
 <body>
   <main>
 
-    <div class="container">
-      
-      <a class="restaurante">Breni's</a>
-      <a class="mesa">Mesa: __</a>
-      <a class="avancar">Avançar</a>
+    <form class="container" action="main_page.html" method="get">
 
-    </div>
+      <a class="restaurante">Breni's</a>
+      <a class="mesa">Mesa:
+        <input type="text" name="mesa" size="2">
+      </a>
+      <input class="avancar" type="submit" value="Avançar">
+
+    </form>
 
   </main>
 </body>

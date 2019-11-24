@@ -4,20 +4,20 @@
   <title>Página Principal</title>
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/index.css" rel="stylesheet">
-<!--   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="assets/css/index.css" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="assets/js/codes.js"></script>
-  <script src="assets/js/index.js"></script> -->
+  <script src="assets/js/main_page.js"></script>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <header class = 'header-container'>
 
-    <a class="header-items">Mesas</a>
-    <a class="header-items">Mesa __</a>
-    <a class="header-items">Enviar</a>
+    <a class="header-items" href="tela_de_inicio.html">Mesas</a>
+    <a class="header-items">Mesa {{mesa}}</a>
+    <button class="header-items" type="button" onclick="alert('O pedido foi enviado!')">Enviar</button>
 
   </header> 
 
@@ -27,14 +27,32 @@
       <div class="menu-container">
 
         <div class="menu-item">
-          <a class="menu-text">Bebidas</a>
+          <a1 class="menu-text">Bebidas</a1>
         </div>
-        <a class="menu-item">Entradas</a>
-        <a class="menu-item">Pratos</a>
-        <a class="menu-item">Sobremesas</a>
+        <a2 class="menu-item">Entradas</a2>
+        <a3 class="menu-item">Pratos</a3>
+        <a4 class="menu-item">Sobremesas</a4>
 
       </div>
     </div>
+
+    <ul class="list">
+      {{#each pratos}}
+        <li class="list-item">
+          <p>
+            {{@key}}
+          </p>
+          {{#if this.acompanha}}
+            <p>
+              {{this.acompanhamento}}
+            </p>
+          {{/if}}
+          <p>
+            {{this.valor}}
+          </p>
+        </li>
+      {{/each}}
+    </ul>
 
   </main>
 

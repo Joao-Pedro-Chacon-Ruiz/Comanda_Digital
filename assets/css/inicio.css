@@ -16,14 +16,21 @@ body{
 .restaurante{
 	display: flex;
 	align-self: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 3rem;
+	font-weight: 800;
 }
 
 .mesa{
 	display: flex;
 	align-self: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
 }
 
 .avancar{
 	display: flex;
 	justify-content: flex-end;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
 }
