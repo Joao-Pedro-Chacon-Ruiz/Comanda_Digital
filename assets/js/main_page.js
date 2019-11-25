@@ -4,9 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	let mesa = params['mesa']
 
 	let bebidas = document.querySelector('a1')
+	let bebida = document.querySelector('ul1')
 	let entradas = document.querySelector('a2')
+	let entrada = document.querySelector('ul2')
 	let pratos = document.querySelector('a3')
+	let prato = document.querySelector('ul3')
 	let sobremesas = document.querySelector('a4')
+	let sobremesa = document.querySelector('ul4')
 
 	let bebidas1 = {
 		'bebidas': {
@@ -70,41 +74,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	coDesReplace('.header-container', params)
+	coDesReplace('.footer-item', params)
+	coDesReplace('.list1', bebidas1)
+	coDesReplace('.list2', entradas1)
+	coDesReplace('.list3', pratos1)
+	coDesReplace('.list4', sobremesas1)
+
+	bebida.classList.add('hidden')
+	entrada.classList.add('hidden')
+	prato.classList.add('hidden')
+	sobremesa.classList.add('hidden')
 
 
 	bebidas.addEventListener('click', function(){
+		bebida.classList.add('hidden')
+		entrada.classList.add('hidden')
+		prato.classList.add('hidden')
+		sobremesa.classList.add('hidden')
+		bebida.classList.remove('hidden')
 
-		// let informacao = document.querySelector('ul')
-		// context = bebidas1
-		// informacao.innerHTML = context
-		coDesReplace('.list', bebidas1)
 
 	})		
 
 	entradas.addEventListener('click', function(){
-
-		// let informacao = document.querySelector('ul')
-		// context = entradas1
-		// informacao.innerHTML = context
-		coDesReplace('.list', entradas1)
+		bebida.classList.add('hidden')
+		entrada.classList.add('hidden')
+		prato.classList.add('hidden')
+		sobremesa.classList.add('hidden')
+		entrada.classList.remove('hidden')
 
 	})	
 
 	pratos.addEventListener('click', function(){
-
-		// let informacao = document.querySelector('ul')
-		// context = pratos1
-		// informacao.innerHTML = context
-		coDesReplace('.list', pratos1)
+		bebida.classList.add('hidden')
+		entrada.classList.add('hidden')
+		prato.classList.add('hidden')
+		sobremesa.classList.add('hidden')
+		prato.classList.remove('hidden')
 
 	})	
 
 	sobremesas.addEventListener('click', function(){
-
-		// let informacao = document.querySelector('ul')
-		// context = sobremesas1
-		// informacao.innerHTML = context
-		coDesReplace('.list', sobremesas1)
+		bebida.classList.add('hidden')
+		entrada.classList.add('hidden')
+		prato.classList.add('hidden')
+		sobremesa.classList.add('hidden')
+		sobremesa.classList.remove('hidden')
+		
 	})
 
 }) 

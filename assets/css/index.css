@@ -4,7 +4,7 @@
 	grid-template-rows: 5rem 5rem;
 	max-width: 64rem;
 	margin: 0 auto;
-	margin-bottom: 5rem;
+	margin-bottom: 1rem;
 	justify-content: center;
 	grid-gap: 2px;
 }
@@ -40,7 +40,25 @@
 	transition: background-color 1s;
 }
 
-.list{
+.list1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.list2{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.list3{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.list4{
 	display: flex;
 	flex-direction: column;
 	font-family: 'Open Sans', sans-serif;
@@ -49,6 +67,26 @@
 .list-item{
 	margin-bottom: 1.5rem;
 	margin-left: 0.5rem;
+	list-style: none;
 
+}
+
+.hidden{
+	display: none;
+}
+
+input[type=number] {
+	padding: 5px 10px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	border-radius: 4px;
+  	-webkit-transition: 0.3s;
+  	transition: 0.3s;
+  	outline: none;
+}
+
+input[type=number]:focus {
+  border: 3px solid #555;
 }
 

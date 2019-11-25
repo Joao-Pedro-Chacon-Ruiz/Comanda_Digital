@@ -10,7 +10,6 @@ body{
   background-color: #FEC800;
   height: 4rem;
   width: 100%;
-
   align-items: center;
 }
 
@@ -46,11 +45,13 @@ body{
   align-items: center;
   justify-content: space-around;
   background-color: #FEC800;
-  font-family: 'Roboto Slab', serif;
 }
 
 .footer-txt{
-
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000000;
 }
 
 .border {

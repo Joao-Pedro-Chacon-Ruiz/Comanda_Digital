@@ -36,7 +36,45 @@
       </div>
     </div>
 
-    <ul class="list">
+    <ul1 class="list1">
+      {{#each bebidas}}
+        <li class="list-item">
+          <p>
+            {{@key}}
+          </p>
+          {{#if this.acompanha}}
+            <p>
+              {{this.acompanhamento}}
+            </p>
+          {{/if}}
+          <p>
+            {{this.valor}}
+          </p>
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+        </li>
+      {{/each}}
+    </ul1>
+
+    <ul2 class="list2">
+      {{#each entradas}}
+        <li class="list-item">
+          <p>
+            {{@key}}
+          </p>
+          {{#if this.acompanha}}
+            <p>
+              {{this.acompanhamento}}
+            </p>
+          {{/if}}
+          <p>
+            {{this.valor}}
+          </p>
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+        </li>
+      {{/each}}
+    </ul2>
+
+    <ul3 class="list3">
       {{#each pratos}}
         <li class="list-item">
           <p>
@@ -50,9 +88,29 @@
           <p>
             {{this.valor}}
           </p>
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
         </li>
       {{/each}}
-    </ul>
+    </ul3>
+
+    <ul4 class="list4">
+      {{#each sobremesas}}
+        <li class="list-item">
+          <p>
+            {{@key}}
+          </p>
+          {{#if this.acompanha}}
+            <p>
+              {{this.acompanhamento}}
+            </p>
+          {{/if}}
+          <p>
+            {{this.valor}}
+          </p>
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+        </li>
+      {{/each}}
+    </ul4>
 
   </main>
 
@@ -60,7 +118,10 @@
     <footer class="footer-container">
 
       <div class="footer-item">
-        <a class="footer-txt">Resumo</a>
+        <form action="resumo.html?mesa=22" method="get" id="pedidos"> 
+          <input type="submit" value="Resumo" class="footer-txt">
+          <input type="hidden" name="mesa" value="{{mesa}}">
+        </form>
       </div>
       <div class="footer-item">
         <a class="footer-txt">Fechar a Conta</a>
