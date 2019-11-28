@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	if(salada){
 		coDesReplace('.list5', params)
-		salada.classList.remove('hidden')
+		saladas.classList.remove('hidden')
 	}
 
 	if(parmegiana){

@@ -23,6 +23,8 @@
 
   <main>
 
+    <p class="title">Resumo da Mesa</p>
+
     <ul1 class="list1">
         <li class="list-item">
           <p>
@@ -134,9 +136,20 @@
         </form>
       </div>
       <div class="footer-item">
-        <a class="footer-txt">Fechar a Conta</a>
+        <form action="fechar_conta.html" method="get" id="fechar"> 
+          <input type="submit" value="Fechar a Conta" class="footer-txt">
+          <input type="hidden" name="mesa" value="{{mesa}}">
+          <input type="hidden" name="abacaxi" value="{{abacaxi}}">
+          <input type="hidden" name="coca" value="{{coca}}">
+          <input type="hidden" name="brahma" value="{{brahma}}">
+          <input type="hidden" name="baden" value="{{baden}}">
+          <input type="hidden" name="salada" value="{{salada}}">
+          <input type="hidden" name="parmegiana" value="{{parmegiana}}">
+          <input type="hidden" name="schnitz" value="{{schnitz}}">
+          <input type="hidden" name="espeto" value="{{espeto}}">
+          <input type="hidden" name="pudim" value="{{pudim}}">
+        </form>
       </div>
-
     </footer> 
   </div>   
 </body>

@@ -64,3 +64,11 @@
 	display: none;
 }
 
+.title{
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem;
+	font-family: 'Roboto Slab', serif;
+	font-size: 2rem;
+}
+

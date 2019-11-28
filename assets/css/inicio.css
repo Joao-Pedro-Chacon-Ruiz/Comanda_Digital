@@ -33,4 +33,6 @@ body{
 	justify-content: flex-end;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
+	background-color: inherit;
+	border: none;
 }
