@@ -4,6 +4,7 @@
   <title>Página Principal</title>
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet"> 
+  <link href="assets/css/resumo.css" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="assets/js/codes.js"></script>
@@ -22,6 +23,104 @@
 
   <main>
 
+    <ul1 class="list1">
+        <li class="list-item">
+          <p>
+            {{abacaxi}} x Suco de abacaxi com hortelã
+          </p>
+          <p>
+            R$8,00
+          </p>
+        </li>
+    </ul1>
+
+    <ul2 class="list2">
+        <li class="list-item">
+          <p>
+            {{coca}} x Coca-Cola
+          </p>
+          <p>
+            R$5,00
+          </p>
+        </li>
+    </ul2>
+
+    <ul3 class="list3">
+        <li class="list-item">
+          <p>
+            {{brahma}} x Brahma
+          </p>
+          <p>
+            R$11,00
+          </p>
+        </li>
+    </ul3>
+
+    <ul4 class="list4">
+        <li class="list-item">
+          <p>
+            {{baden}} x Baden Baden
+          </p>
+          <p>
+            R$14,00
+          </p>
+        </li>
+    </ul4>
+
+    <ul5 class="list5">
+        <li class="list-item">
+          <p>
+            {{salada}} x Ceasar Salad
+          </p>
+          <p>
+            R$25,00
+          </p>
+        </li>
+    </ul5>
+
+    <ul6 class="list6">
+        <li class="list-item">
+          <p>
+            {{parmegiana}} x Parmegiana de Frango
+          </p>
+          <p>
+            R$28,00
+          </p>
+        </li>
+    </ul6>
+
+    <ul7 class="list7">
+        <li class="list-item">
+          <p>
+           {{schnitz}} x Schnitzel
+          </p>
+          <p>
+            R$32,00
+          </p>
+        </li>
+    </ul7>
+
+    <ul8 class="list8">
+        <li class="list-item">
+          <p>
+            {{espeto}} x Espeto de Carne
+          </p>
+          <p>
+            R$6,20
+          </p>
+        </li>
+    </ul8>
+
+    <ul9 class="list9">
+        <li class="list-item">
+          <p>
+            {{pudim}} x Pudim de doce de leite
+          </p>
+          <p>
+            R$11,00
+          </p>
+        </li>
+    </ul9>
 
   </main>
 
@@ -29,7 +128,10 @@
     <footer class="footer-container">
 
       <div class="footer-item">
-        <a class="footer-txt" href="main_page.html?mesa=22">Cardápio</a>
+        <form action="main_page.html" method="get" id="pedidos"> 
+          <input type="submit" value="Cardápio" class="footer-txt">
+          <input type="hidden" name="mesa" value="{{mesa}}">
+        </form>
       </div>
       <div class="footer-item">
         <a class="footer-txt">Fechar a Conta</a>

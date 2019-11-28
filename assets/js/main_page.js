@@ -14,59 +14,68 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	let bebidas1 = {
 		'bebidas': {
-			'Suco de abacaxi com hortelã': {
+			'abacaxi': {
 				'acompanha': false,
-				'valor': 'R$8,00'
+				'valor': 'R$8,00',
+				'nome': 'Suco de abacaxi com hortelã'
 			},
-			'Coca-Cola': {
+			'coca': {
 				'acompanha': false,
-				'valor': 'R$5,00'
+				'valor': 'R$5,00',
+				'nome':'Coca-Cola'
 			},
-			'Brahma': {
+			'brahma': {
 				'acompanha': false,
-				'valor': 'R$11,00'
+				'valor': 'R$11,00',
+				'nome': 'Brahma'
 			},
-			'Baden Baden': {
+			'baden': {
 				'acompanha': false,
-				'valor': 'R$14,00'
+				'valor': 'R$14,00',
+				'nome': 'Baden Baden'
 			},
 		},
 	}
 
 	let entradas1 = {
 		'entradas': {
-			'Ceasar Salad': {
+			'salada': {
 				'acompanha': false,
-				'valor': 'R$25,00'
+				'valor': 'R$25,00',
+				'nome': 'Ceasar Salad'
 			},
 		},
 	}
 
 	let pratos1 = {
 		'pratos': {
-			'Parmegiana de Frango': {
+			'parmegiana': {
 				'acompanha': true,
 				'acompanhamento': 'Acompanha arroz e fritas',
-				'valor': 'R$28,00'
+				'valor': 'R$28,00',
+				'nome': 'Parmegiana de Frango'
 			},
-			'Schnitzel': {
+			'schnitz': {
 				'acompanha': true,
 				'acompanhamento': 'Acompanha salada de batata',
-				'valor': 'R$32,00'
+				'valor': 'R$32,00',
+				'nome': 'Schnitzel'
 			},
-			'Espeto de Carne': {
+			'espeto': {
 				'acompanha': true,
 				'acompanhamento': 'Acompanha farofa',
-				'valor': 'R$6,20'
+				'valor': 'R$6,20',
+				'nome': 'Espeto de Carne'
 			},
 		},
 	}
 
 	let sobremesas1 = {
 		'sobremesas': {
-			'Pudim de Doce de Leite': {
+			'pudim': {
 				'acompanha': false,
-				'valor': 'R$11,00'
+				'valor': 'R$11,00',
+				'nome': 'Pudim de Doce de Leite'
 			},
 		},
 	}

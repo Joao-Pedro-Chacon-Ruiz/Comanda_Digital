@@ -40,7 +40,7 @@
       {{#each bebidas}}
         <li class="list-item">
           <p>
-            {{@key}}
+            {{this.nome}}
           </p>
           {{#if this.acompanha}}
             <p>
@@ -50,7 +50,7 @@
           <p>
             {{this.valor}}
           </p>
-          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="50">
         </li>
       {{/each}}
     </ul1>
@@ -59,7 +59,7 @@
       {{#each entradas}}
         <li class="list-item">
           <p>
-            {{@key}}
+            {{this.nome}}
           </p>
           {{#if this.acompanha}}
             <p>
@@ -69,7 +69,7 @@
           <p>
             {{this.valor}}
           </p>
-          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="50">
         </li>
       {{/each}}
     </ul2>
@@ -78,7 +78,7 @@
       {{#each pratos}}
         <li class="list-item">
           <p>
-            {{@key}}
+            {{this.nome}}
           </p>
           {{#if this.acompanha}}
             <p>
@@ -88,7 +88,7 @@
           <p>
             {{this.valor}}
           </p>
-          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="50">
         </li>
       {{/each}}
     </ul3>
@@ -97,7 +97,7 @@
       {{#each sobremesas}}
         <li class="list-item">
           <p>
-            {{@key}}
+            {{this.nome}}
           </p>
           {{#if this.acompanha}}
             <p>
@@ -107,7 +107,7 @@
           <p>
             {{this.valor}}
           </p>
-          <input type="number" form="pedidos" name="{{@key}}" min="0" max="10">
+          <input type="number" form="pedidos" name="{{@key}}" min="0" max="50">
         </li>
       {{/each}}
     </ul4>
@@ -118,7 +118,7 @@
     <footer class="footer-container">
 
       <div class="footer-item">
-        <form action="resumo.html?mesa=22" method="get" id="pedidos"> 
+        <form action="resumo.html" method="get" id="pedidos"> 
           <input type="submit" value="Resumo" class="footer-txt">
           <input type="hidden" name="mesa" value="{{mesa}}">
         </form>
