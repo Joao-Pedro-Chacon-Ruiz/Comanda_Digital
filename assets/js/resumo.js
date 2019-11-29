@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	coDesReplace('.header-container', params)
 	coDesReplace('.footer-item', params)
+	coDesReplace('.form2', params)
 	
 	abacaxis.classList.add('hidden')
 	cocas.classList.add('hidden')
