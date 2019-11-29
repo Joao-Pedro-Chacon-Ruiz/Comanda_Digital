@@ -16,6 +16,8 @@
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
+  background-color: inherit;
+  border: none;
 }
 
 .footer-container {
@@ -48,4 +50,134 @@
   font-size: 1rem;
   text-decoration: none;
   color: #000000;
+  background-color: inherit;
+  border: none;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+}
+
+.dividir{
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.list1{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list2{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list3{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list4{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list5{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list6{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list7{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list8{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list9{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list-item{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  list-style: none;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.total{
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 0.5rem;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+.result{
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+input[type=text] {
+  padding: 5px 10px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  border: 3px solid #fff3bd;
+  border-radius: 4px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #FEC800;
+}
+
+input[type=submit] {
+  padding: 5px 10px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  background-color: #FEC800;
+  border: 3px solid #FEC800;
+  border-radius: 4px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
 }

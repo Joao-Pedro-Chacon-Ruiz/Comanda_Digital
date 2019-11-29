@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	let params = coDesExtract()
 	let mesa = parseInt(params['mesa'])
+	let num_clientes = parseInt(params['num_clientes'])
 	let abacaxi = parseInt(params['abacaxi'])
 	let coca = parseInt(params['coca'])
 	let brahma = parseInt(params['brahma'])
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	coDesReplace('.header-container', params)
-	coDesReplace('.dividir', params)
+	coDesReplace('.footer-item', params)
 	
 	abacaxis.classList.add('hidden')
 	cocas.classList.add('hidden')
@@ -44,67 +45,75 @@ document.addEventListener('DOMContentLoaded', function() {
 	if(abacaxi){
 		coDesReplace('.list1', params)
 		abacaxis.classList.remove('hidden')
-		calculadora.push(parseInt(abacaxi)*8)
+		calculadora.push(abacaxi*8)
 	}
 
 	if(coca){
 		coDesReplace('.list2', params)
 		cocas.classList.remove('hidden')
-		calculadora.push(parseInt(coca)*5)
+		calculadora.push(coca*5)
 	}
 
 	if(brahma){
 		coDesReplace('.list3', params)
 		brahmas.classList.remove('hidden')
-		calculadora.push(parseInt(brahma)*11)
+		calculadora.push(brahma*11)
 	}
 
 	if(baden){
 		coDesReplace('.list4', params)
 		badens.classList.remove('hidden')
-		calculadora.push(parseInt(baden)*14)
+		calculadora.push(baden*14)
 	}
 
 	if(salada){
 		coDesReplace('.list5', params)
 		saladas.classList.remove('hidden')
-		calculadora.push(parseInt(salada)*25)
+		calculadora.push(salada*25)
 	}
 
 	if(parmegiana){
 		coDesReplace('.list6', params)
 		parmegianas.classList.remove('hidden')
-		calculadora.push(parseInt(parmegiana)*28)
+		calculadora.push(parmegiana*28)
 	}
 
 	if(schnitzel){
 		coDesReplace('.list7', params)
 		schnitzels.classList.remove('hidden')
-		calculadora.push(parseInt(schnitzel)*32)
+		calculadora.push(schnitzel*32)
 	}
 
 	if(espeto){
 		coDesReplace('.list8', params)
 		espetos.classList.remove('hidden')
-		calculadora.push(parseInt(espeto)*6.20)
+		calculadora.push(espeto*6.20)
 	}
 
 	if(pudim){
 		coDesReplace('.list9', params)
 		pudims.classList.remove('hidden')
-		calculadora.push(parseInt(pudim)*11)
+		calculadora.push(pudim*11)
 	}
 
 
 
 	for (let x of calculadora) {
-		soma += x		
+		soma += x	
 	}
 
+	let result = soma/num_clientes
+	console.log(result)
+
 	let final1 = {'valor': soma}
+	let final2 = {'valor': result}
 
 
 	coDesReplace('.total', final1)	
+	coDesReplace('.result', final2)
+
+
+
 
 
 

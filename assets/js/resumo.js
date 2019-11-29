@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 	let params = coDesExtract()
-	let mesa = params['mesa']
-	let abacaxi = params['abacaxi']
-	let coca = params['coca']
-	let brahma = params['brahma']
-	let baden = params['baden']
-	let salada = params['salada']
-	let parmegiana = params['parmegiana']
-	let schnitzel = params['schnitz']
-	let espeto = params['espeto']
-	let pudim = params['pudim']
+	let mesa = parseInt(params['mesa'])
+	let abacaxi = parseInt(params['abacaxi'])
+	let coca = parseInt(params['coca'])
+	let brahma = parseInt(params['brahma'])
+	let baden = parseInt(params['baden'])
+	let salada = parseInt(params['salada'])
+	let parmegiana = parseInt(params['parmegiana'])
+	let schnitzel = parseInt(params['schnitz'])
+	let espeto = parseInt(params['espeto'])
+	let pudim = parseInt(params['pudim'])
 
 	let abacaxis = document.querySelector('ul1')
 	let cocas = document.querySelector('ul2')
